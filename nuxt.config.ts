@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/eslint", "@nuxtjs/tailwindcss"],
   tailwindcss: {},
   app: {
-    baseURL: "https://mapleleaf3659.github.io/portfolio/",
+    baseURL: "/portfolio/",
   },
   nitro: {
     prerender: {
