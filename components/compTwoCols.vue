@@ -1,18 +1,16 @@
 <template>
-    <div class="education grid grid-cols-1 lg:grid-cols-6">
-        <div class="col-span-1 flex flex-row lg:flex-col xl:flex-row items-left  xl:items-center">
+    <div class="education flex flex-col">
+        <div class="flex items-left">
             <span class="text-desc">{{ dateStart }}</span>
             <span v-show="dateEnd" class="text-desc">-{{ dateEnd }}</span>
         </div>
-        <div class="col-span-5">
+        <div class="">
             <h2 class="text-title">{{ title }}</h2>
             <h2 class="text-desc mt-1 mb-2">{{ subtitle }}</h2>
             <ul class="flex flex-col gap-2">
-                <li v-for="(item, index) in descArray" :key="index">
-                    <p class="text-desc">
-                        <span class="mx-2">●</span>
-                        <span>{{ item }}</span>
-                    </p>
+                <li v-for="(item, index) in descArray" :key="index" class="text-desc flex">
+                    <span class="mx-2">●</span>
+                    <p>{{ item }}</p>
                 </li>
             </ul>
 
