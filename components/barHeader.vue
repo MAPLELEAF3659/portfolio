@@ -3,10 +3,10 @@
         <div class="container h-full mx-auto flex flex-row justify-between">
             <div class="flex h-full items-center">
                 <nuxt-link class="logo" to="/">
-                    <h1 class="text-white text-3xl">Jun-Ye Zhou Portfolio</h1>
+                    <h1 class="text-title">Jun-Ye Zhou Portfolio</h1>
                 </nuxt-link>
             </div>
-            <div class="flex h-full items-center">
+            <div class="hidden md:flex h-full items-center">
                 <ul class="flex flex-row gap-4">
                     <li>
                         <a class="text-white" href="https://github.com/MAPLELEAF3659">GitHub</a>
