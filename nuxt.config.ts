@@ -4,5 +4,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/eslint", "@nuxtjs/tailwindcss"],
   tailwindcss: {},
-  app: { baseURL: "https://mapleleaf3659.github.io/portfolio/" },
+  app: {
+    baseURL: "https://mapleleaf3659.github.io/portfolio/",
+  },
+  nitro: {
+    prerender: {
+      ignore: ["/200.html", "/404.html"],
+    },
+  },
 });
