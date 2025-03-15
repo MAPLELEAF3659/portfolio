@@ -14,8 +14,12 @@
     @apply text-white text-center;
   }
 
+  .text-title {
+    @apply text-3xl text-white font-bold;
+  }
+
   .text-desc {
-    @apply text-base;
+    @apply text-lg text-white;
   }
 
   .text-with-space {
@@ -27,8 +31,11 @@
     letter-spacing: 0.3rem;
     margin-left: 0.3rem;
   }
-  
+
   .bg-color-header-footer {
     @apply bg-slate-700;
+  }
+  .bg-color-page {
+    @apply bg-gradient-to-b from-sky-700 from-80% to-sky-600 to-90%;
   }
 }
