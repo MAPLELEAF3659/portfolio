@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .text-main {
+    font-size: 6rem;
+    line-height: 100%;
+    @apply text-white text-center font-bold;
+  }
+
+  .text-main-sub {
+    font-size: 2rem;
+    @apply text-white text-center;
+  }
+
+  .text-desc {
+    @apply text-base;
+  }
+
+  .text-with-space {
+    letter-spacing: 1rem;
+    margin-left: 1rem;
+  }
+
+  .text-with-space-sm {
+    letter-spacing: 0.3rem;
+    margin-left: 0.3rem;
+  }
+  
+  .bg-color-header-footer {
+    @apply bg-slate-700;
+  }
+}
