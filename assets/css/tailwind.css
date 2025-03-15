@@ -4,18 +4,19 @@
 
 @layer base {
   .text-main {
-    font-size: 6rem;
-    line-height: 100%;
-    @apply text-white text-center font-bold;
+    @apply text-6xl md:text-8xl text-white text-center font-bold;
   }
 
   .text-main-sub {
-    font-size: 2rem;
-    @apply text-white text-center;
+    @apply text-xl md:text-3xl text-white text-center;
+  }
+
+  .text-title {
+    @apply text-2xl md:text-3xl text-white font-bold;
   }
 
   .text-desc {
-    @apply text-base;
+    @apply text-base md:text-lg text-white;
   }
 
   .text-with-space {
@@ -27,8 +28,11 @@
     letter-spacing: 0.3rem;
     margin-left: 0.3rem;
   }
-  
+
   .bg-color-header-footer {
     @apply bg-slate-700;
+  }
+  .bg-color-page {
+    @apply bg-gradient-to-b from-sky-700 from-80% to-sky-600 to-90%;
   }
 }
