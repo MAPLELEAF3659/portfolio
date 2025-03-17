@@ -1,28 +1,29 @@
 <!-- eslint-disable vue/first-attribute-linebreak -->
 <template>
     <div class="projects">
-        <section class="main py-16 bg-[url(/public/images/index_bg.png)]">
+        <section class="main py-8 sm:py-16 bg-[url(/public/images/index_bg.png)]">
             <h1 class="text-main-sm text-center">專案</h1>
             <h2 class="text-main-sub text-with-space-sm mt-2">Projects</h2>
         </section>
-        <section class="showcases container mx-auto p-16">
-            <div class="grid grid-cols-3 gap-4 ">
-                <CompTitle class="col-span-3 mt-12 mb-6" title="研討會發表" title-bg="CONFERENCE" />
+        <section class="showcases container mx-auto py-8 sm:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mx-8">
+                <CompTitle class="col-span-1 md:col-span-2 xl:col-span-3 mt-12 mb-6" title="研討會發表"
+                    title-bg="CONFERENCE" />
                 <div v-for="(item, index) in projectItemsConference" :key="index" class="project-boxes">
                     <BoxProject class="col-span-1" :title="item.title" :desc="item.desc" :special="item.special"
                         :tags="item.tags" :img-url="item.imgUrl" :url="item.url" />
                 </div>
-                <CompTitle class="col-span-3 mt-12 mb-6" title="韌體" title-bg="FIRMWARE" />
+                <CompTitle class="col-span-1 md:col-span-2 xl:col-span-3 mt-12 mb-6" title="韌體" title-bg="FIRMWARE" />
                 <div v-for="(item, index) in projectItemsFirmware" :key="index" class="project-boxes">
                     <BoxProject class="col-span-1" :title="item.title" :desc="item.desc" :special="item.special"
                         :tags="item.tags" :img-url="item.imgUrl" :url="item.url" />
                 </div>
-                <CompTitle class="col-span-3 mt-12 mb-6" title="遊戲" title-bg="GAME" />
+                <CompTitle class="col-span-1 md:col-span-2 xl:col-span-3 mt-12 mb-6" title="遊戲" title-bg="GAME" />
                 <div v-for="(item, index) in projectItemsGame" :key="index" class="project-boxes">
                     <BoxProject class="col-span-1" :title="item.title" :desc="item.desc" :special="item.special"
                         :tags="item.tags" :img-url="item.imgUrl" :url="item.url" />
                 </div>
-                 <CompTitle class="col-span-3 mt-12 mb-6" title="網站" title-bg="WEBSITE" />
+                <CompTitle class="col-span-1 md:col-span-2 xl:col-span-3 mt-12 mb-6" title="網站" title-bg="WEBSITE" />
                 <div v-for="(item, index) in projectItemsWeb" :key="index" class="project-boxes">
                     <BoxProject class="col-span-1" :title="item.title" :desc="item.desc" :special="item.special"
                         :tags="item.tags" :img-url="item.imgUrl" :url="item.url" />
@@ -71,7 +72,7 @@ const projectItemsFirmware = [
     {
         title: "山頂的Pachinko",
         desc: "山區互動式垃圾桶及後台管理系統",
-        tags: ["ESP32", "Firebase", "Unity"],
+        tags: ["MCU", "ESP32", "Firebase", "Unity"],
         special: "2023技職盃黑客松 北區賽佳作",
         imgUrl: "/images/projects/empowering_interactive_fitness_game/intro.png",
         url: "/projects/"
@@ -79,7 +80,7 @@ const projectItemsFirmware = [
     {
         title: "滴滴蘭",
         desc: "針對蘭花產業的AR監控與2倍節水循環系統",
-        tags: ["ESP32", "Firebase", "Unity", "ARCore"],
+        tags: ["MCU", "ESP32", "Firebase", "Unity", "ARCore"],
         special: "2023技職盃黑客松 全國賽入圍",
         imgUrl: "/images/projects/empowering_interactive_fitness_game/intro.png",
         url: "/projects/"

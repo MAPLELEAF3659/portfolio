@@ -1,7 +1,7 @@
 <template>
     <div class="box-project bg-slate-600 rounded-2xl p-8 shadow-lg shadow-slate-800">
         <nuxt-link class="flex flex-col gap-2" :to="url">
-            <div class="img-container h-64 flex flex-col items-center justify-center">
+            <div class="img-container md:h-48 lg:h-64 flex flex-col items-center justify-center">
                 <img :src="imgUrl" :alt="title + ' intro image'">
             </div>
             <h1 class="text-title">{{ title }}</h1>
