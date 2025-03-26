@@ -23,6 +23,11 @@
     @apply text-base md:text-lg text-white;
   }
 
+  .text-caption {
+    color: #170D96;
+    @apply text-base md:text-lg text-center;
+  }
+
   .text-with-space {
     letter-spacing: 1rem;
     margin-left: 1rem;
@@ -38,5 +43,11 @@
   }
   .bg-color-page {
     @apply bg-gradient-to-b from-sky-700 from-80% to-sky-600 to-90%;
+  }
+  .bg-color-img-caption{
+    background: #FFEB80;
+  }
+  .bg-color-link-caption{
+    background: #FFD6A6;
   }
 }
