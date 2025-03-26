@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col gap-4">
         <CompTitle :title="title" :title-bg="titleBg"/>
-        <CompDesc :desc="desc" class="ml-8"/>
+        <CompDesc :desc="desc" class="ml-8 text-justify"/>
     </div>
 </template>
 
