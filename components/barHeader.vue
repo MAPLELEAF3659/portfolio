@@ -12,7 +12,8 @@
                         <nuxt-link to="/projects" class="text-desc">專案</nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="/about" class="text-desc">關於</nuxt-link>
+                        <!-- <nuxt-link to="/about" class="text-desc">關於</nuxt-link> -->
+                        <p class="text-desc">關於</p>
                     </li>
                     <li class="flex lg:hidden items-center">
                         <button class="h-10 w-10" @click="ToggleHamList">
@@ -35,7 +36,7 @@
                 </ul>
             </div>
             <div class="col-span-1 hidden lg:flex h-full items-center justify-end mr-2 xl:mr-0">
-                <ul class="flex flex-row gap-4">
+                <ul class="flex flex-row gap-4 items-center">
                     <li>
                         <a class="text-desc" href="https://github.com/MAPLELEAF3659">GitHub</a>
                     </li>
@@ -43,7 +44,8 @@
                         <a class="text-desc" href="https://mapleleaf3659.github.io/ml-blog">Blog</a>
                     </li>
                     <li>
-                        <nuxt-link to="/contact" class="text-desc rounded-2xl bg-slate-500 px-4 py-1">聯絡</nuxt-link>
+                        <!-- <nuxt-link to="/contact" class="text-desc rounded-2xl bg-slate-500 px-4 py-1">聯絡</nuxt-link> -->
+                        <p class="text-desc rounded-2xl bg-slate-500 px-4 py-1">聯絡</p>
                     </li>
                 </ul>
             </div>
@@ -69,12 +71,13 @@
                 <!-- eslint-disable-next-line vue/html-self-closing -->
                 <div class="bg fixed h-screen w-screen z-40 bg-black bg-opacity-75" @touchstart="CloseHamList"></div>
                 <div class="main fixed w-full pt-6 pb-4 z-50 bg-slate-900">
-                    <ul class="flex flex-col gap-4 mb-4 text-center">
+                    <ul class="flex flex-col gap-4 mb-4 text-center items-center">
                         <li class="text-desc" @click="CloseHamList">
                             <nuxt-link to="/projects">專案</nuxt-link>
                         </li>
                         <li class="text-desc" @click="CloseHamList">
-                            <nuxt-link to="/about">關於</nuxt-link>
+                            <!-- <nuxt-link to="/about" class="text-desc">關於</nuxt-link> -->
+                            <p class="text-desc">關於</p>
                         </li>
                         <li @click="CloseHamList">
                             <a class="text-desc" href="https://github.com/MAPLELEAF3659">GitHub</a>
@@ -83,7 +86,8 @@
                             <a class="text-desc" href="https://mapleleaf3659.github.io/ml-blog">Blog</a>
                         </li>
                         <li @click="CloseHamList">
-                            <nuxt-link to="/contact" class="text-desc rounded-2xl bg-slate-500 px-4 py-1">聯絡</nuxt-link>
+                            <!-- <nuxt-link to="/contact" class="text-desc rounded-2xl bg-slate-500 px-4 py-1">聯絡</nuxt-link> -->
+                            <p class="text-desc rounded-2xl bg-slate-500 px-4 py-1">聯絡</p>
                         </li>
                     </ul>
                 </div>

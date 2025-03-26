@@ -2,7 +2,7 @@
     <div class="box-project bg-slate-600 rounded-2xl p-8 shadow-lg shadow-slate-800">
         <nuxt-link class="flex flex-col gap-2" :to="url">
             <div class="img-container md:h-48 lg:h-64 flex flex-col items-center justify-center">
-                <img :src="imgUrl" :alt="title + ' intro image'">
+                <img :src="imgUrl" :alt="'preview image'">
             </div>
             <h1 class="text-title">{{ title }}</h1>
             <p class="text-desc">{{ desc }}</p>
@@ -33,7 +33,7 @@ defineProps({
         default: ""
     },
     tags: {
-        type: Array[String],
+        type: Array,
         default: new Array
     },
     imgUrl: {
