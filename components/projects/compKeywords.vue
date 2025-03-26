@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center gap-4">
-        <p class="text-desc">{{ title }}: </p>
+        <p v-show="title" class="text-desc"><i>{{ title }}</i></p>
         <div class="tags flex flex-wrap gap-2 gap-y-4 my-2">
             <div v-for="(item, index) in keywords" :key="index">
                 <span
@@ -16,7 +16,7 @@
 defineProps({
     title: {
         type: String,
-        default: "技術"
+        default: ""
     },
     keywords: {
         type: Array,
