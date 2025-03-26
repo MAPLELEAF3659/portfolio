@@ -1,5 +1,5 @@
 <template>
-    <p class="text-desc">{{ desc }}</p>
+    <p class="text-desc whitespace-pre-line">{{ desc }}</p>
 </template>
 
 <script setup lang="ts">
