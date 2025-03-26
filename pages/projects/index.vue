@@ -1,10 +1,7 @@
 <!-- eslint-disable vue/first-attribute-linebreak -->
 <template>
     <div class="projects">
-        <section class="main py-8 sm:py-16 bg-[url(/public/images/index_bg.png)]">
-            <h1 class="text-main-sm text-center">專案</h1>
-            <h2 class="text-main-sub text-with-space-sm mt-2">Projects</h2>
-        </section>
+        <SectSubHeader title="專案" title-alt="Projects"/>
         <section class="showcases container mx-auto py-8 sm:py-16">
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mx-8">
                 <CompTitle class="col-span-1 md:col-span-2 xl:col-span-3 mt-12 mb-6" title="精選" title-bg="FEATURED" />
@@ -25,6 +22,7 @@
 <script setup lang="ts">
 import BoxProject from '~/components/projects/boxProject.vue'
 import CompTitle from "~/components/compTitle.vue"
+import SectSubHeader from '~/components/sectSubHeader.vue'
 const projectItemsFeatured = [
     {
         title: "Empowering Interactive Fitness Game",
@@ -32,7 +30,7 @@ const projectItemsFeatured = [
         special: "IEEE ICCE-TW 2023",
         tags: ["AI", "數位遊戲", "MCU", "ESP8266", "人機互動"],
         imgUrl: "/images/projects/empowering_interactive_fitness_game/preview.png",
-        url: "/projects/"
+        url: "/projects/empowering_interactive_fitness_game"
     }, {
         title: "Word Card Generation for Language Education using Latent Diffusion Model",
         desc: "設計基於LDM的單字卡生成系統，透過CC0數據集、GPT-4提示與SLD機制確保版權合法與語意相關，並由實驗證實其可為教育領域安全生成適當內容",
