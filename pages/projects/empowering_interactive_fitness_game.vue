@@ -5,9 +5,8 @@
         <div class="container mx-auto py-8 sm:py-12">
             <div class="grid grid-cols-2 gap-4 items-center mx-4 lg:mx-32 xl:mx-64">
                 <CompDesc desc="2023 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)"
-                    class="col-span-2 mx-auto" />
-                <CompKeywords title="Keywords"
-                    :keywords="['Artificial Intelligence', 'Fitness Game', 'Player Participation', 'Exergame']"
+                    class="col-span-2 mx-auto text-center" />
+                <CompKeywords :keywords="['Artificial Intelligence', 'Fitness Game', 'Player Participation', 'Exergame']"
                     class="col-span-2 mx-auto" />
                 <BoxLink caption="IEEE Xplore Proceeding" url="https://ieeexplore.ieee.org/document/10227046" class="col-span-2"/>
                 <CompTitleWithDesc title="摘要" title-bg="ABSTRACT"
