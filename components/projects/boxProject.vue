@@ -6,20 +6,15 @@
             </div>
             <h1 class="text-title">{{ title }}</h1>
             <p class="text-desc">{{ desc }}</p>
-            <div v-show="tags.length > 0" class="tags flex flex-wrap gap-2 gap-y-4 my-2">
-                <div v-for="(item, index) in tags" :key="index">
-                    <span
-                        class="tag text-desc bg-slate-300 rounded-2xl px-4 py-1 text-black shadow-md shadow-slate-800">
-                        {{ item }}
-                    </span>
-                </div>
-            </div>
+            <CompKeywords v-show="tags.length > 0" :keywords="tags"/>
             <p v-show="special" class="text-desc italic whitespace-pre-wrap">{{ special }}</p>
         </nuxt-link>
     </div>
 </template>
 
 <script setup lang="ts">
+import CompKeywords from './compKeywords.vue';
+
 const config = useRuntimeConfig();
 const baseUrl = config.app.baseURL;
 defineProps({
