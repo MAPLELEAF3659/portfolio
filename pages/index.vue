@@ -22,9 +22,9 @@
                 <section class="about section-box col-span-2">
                     <CompTitle title="簡介" title-bg="ABOUT" />
                     <CompDesc
-                        desc="從資訊跨足設計的跳脫框架，使我同時具有開發者的務實能力，以及設計師的創新思維。而透過各項專題實作、實習經驗與國際研討會發表，我已累積許多軟韌體、人工智慧、多媒體網路、人機互動等豐富經歷，讓我得以蛻變成為AI跨域科技人。" />
+                        desc="具備嵌入式軟韌體、人工智慧及多媒體網路通訊等開發與研究能力，並兼具設計師的創新思維。從專案合作、實習經驗與國際研討會發表中，探索跨領域實際應用。" />
                     <CompDesc
-                        desc="Stepping beyond the boundaries from information technology to design domain has equipped me with both the practical skills of a developer and the innovative mindset of a designer. Through various project implementations and oral presentations at international conferences, I have accumulated extensive interdisciplinarity experience in software/firmware development, AI, and multimedia networking." />
+                        desc="Stepping beyond the boundaries from information technology to design domain has equipped me with both the practical skills of a developer and the innovative mindset of a designer. Through various project implementations and oral presentations at international conferences, I have accumulated extensive interdisciplinary experience in software/firmware development, AI, and multimedia networking." />
                 </section>
                 <section class="education section-box col-span-2 md:col-span-1">
                     <CompTitle title="學歷" title-bg="EDUCATION" />

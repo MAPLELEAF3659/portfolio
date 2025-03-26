@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   tailwindcss: {},
   app: {
     baseURL: "/portfolio/",
+    pageTransition: { name: "page", mode: "out-in" },
   },
   nitro: {
     prerender: {
