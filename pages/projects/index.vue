@@ -82,13 +82,13 @@ const projectItemsFeatured = [
 
 const projectItemsOther = [
     {
-        title: "疫手掌握NullTac",
+        title: "疫手掌握 NullTac",
         desc: "結合Leap Motion的非接觸式電梯按鈕介面",
         tags: ["Leap Motion Controller", "Unity"],
         imgUrl: "/images/projects/nulltac/preview.png",
         url: "/projects/nulltac"
     }, {
-        title: "The Controlled演控人生",
+        title: "演控人生 The Controlled",
         desc: "社交軟體演算法模擬2D遊戲",
         tags: ["模擬", "Unity"],
         special: "2023 放視大賞．PC與主機遊戲組 入圍",
@@ -103,7 +103,7 @@ const projectItemsOther = [
         url: "/projects/ntut_lion_revenge"
     },
     {
-        title: "Bad Taste Radar",
+        title: "壞品味雷達 Bad Taste Radar",
         desc: "以網路爬蟲獲取各大美食網站評分，並分析評價的地雷程度(可信度)",
         tags: ["網站", "網路爬蟲", "Blazer", "Firebase"],
         imgUrl: "/images/projects/bad_taste_radar/preview.png",
