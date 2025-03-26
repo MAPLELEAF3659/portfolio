@@ -3,8 +3,8 @@
     <div class="project-detail">
         <SectSubHeader title="雙軸穩定器" title-alt="2-Axis Gimbal Stabilizer" />
         <div class="container mx-auto py-8 sm:py-12">
-            <div class="grid grid-cols-6 gap-4 items-center mx-4 lg:mx-32 xl:mx-48">
-                <CompKeywords :keywords="['RPi 4B', 'Linux kernel driver', 'MPU6050', 'SG90', 'i2c', 'FIFO']"
+            <div class="grid grid-cols-6 gap-4 items-center mx-4 lg:mx-16 xl:mx-48">
+                <CompKeywords :keywords="['RPi 4B', 'Linux kernel driver', 'MPU6050', 'SG90', 'i2c', 'FIFO']" centered
                     class="col-span-6 mx-auto" />
                 <BoxLink caption="Github" url="https://github.com/MAPLELEAF3659/two-axis_gimbal_stabilizer"
                     class="col-span-6" />

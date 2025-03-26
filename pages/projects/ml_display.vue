@@ -5,7 +5,7 @@
         <div class="container mx-auto py-8 sm:py-12">
             <div class="grid grid-cols-6 gap-4 mx-4 lg:mx-32 xl:mx-48">
                 <CompKeywords
-                    :keywords="['ESP32', 'FreeRTOS', 'Multi-core Task Scheduling', 'TFT Screen', 'WebAPI', 'Wi-Fi']"
+                    :keywords="['ESP32', 'FreeRTOS', 'Multi-core Task Scheduling', 'TFT Screen', 'WebAPI', 'Wi-Fi']" centered
                     class="col-span-6 mx-auto" />
                 <BoxLink caption="Github" url="https://github.com/MAPLELEAF3659/ml_display"
                     class="col-span-6" />

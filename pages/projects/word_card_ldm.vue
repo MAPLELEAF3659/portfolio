@@ -9,7 +9,7 @@
                     desc="2023 IET International Conference on Engineering Technologies and Applications (IET-ICETA)"
                     class="col-span-2 mx-auto text-center" />
                 <CompKeywords
-                    :keywords="['Diffusion Model', 'Image Generation', 'Word Card', 'Language Education', 'Vocabulary Acquisition']"
+                    :keywords="['Diffusion Model', 'Image Generation', 'Word Card', 'Language Education', 'Vocabulary Acquisition']" centered
                     class="col-span-2 mx-auto" />
                 <BoxLink caption="IEEE Xplore Proceeding" url="https://ieeexplore.ieee.org/document/10461215"
                     class="col-span-2" />
