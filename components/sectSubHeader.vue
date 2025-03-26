@@ -1,5 +1,5 @@
 <template>
-    <section class="main py-8 sm:py-16 bg-[url(/public/images/index_bg.png)]">
+    <section class="main py-8 sm:py-16 bg-[url(/public/images/index_bg.png)] bg-cover">
         <h1 class="text-main-sm text-center">{{ title }}</h1>
         <h2 class="text-main-sub text-with-space-sm mt-2">{{ titleAlt }}</h2>
     </section>
