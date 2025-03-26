@@ -1,10 +1,10 @@
 <template>
-    <div class="education flex flex-col">
-        <div class="flex items-left">
+    <div class="experience flex flex-col">
+        <div class="date flex items-left">
             <span class="text-desc">{{ dateStart }}</span>
             <span v-show="dateEnd" class="text-desc">-{{ dateEnd }}</span>
         </div>
-        <div class="">
+        <div class="info">
             <h2 class="text-title">{{ title }}</h2>
             <h2 class="text-desc mt-1 mb-2">{{ subtitle }}</h2>
             <ul class="flex flex-col gap-2">
