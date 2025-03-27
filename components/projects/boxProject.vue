@@ -1,5 +1,7 @@
 <template>
-    <div class="box-project bg-slate-600 rounded-2xl p-8 shadow-lg shadow-slate-800">
+    <!-- eslint-disable-next-line vue/first-attribute-linebreak -->
+    <div class="box-project bg-slate-600 rounded-2xl p-8 shadow-lg shadow-slate-800 ani-float-right"
+        :style="{ 'animation-delay': aniDelay + 's' }">
         <nuxt-link :to="url" draggable="false" class="flex flex-col gap-2">
             <div class="img-container h-32 md:h-48 lg:h-64 flex flex-col items-center justify-center">
                 <!-- eslint-disable-next-line vue/first-attribute-linebreak -->
@@ -15,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import CompKeywords from './compKeywords.vue';
+import CompKeywords from '~/components/projects/compKeywords.vue';
 
 const config = useRuntimeConfig();
 const baseUrl = config.app.baseURL;
@@ -43,6 +45,10 @@ defineProps({
     url: {
         type: String,
         default: ""
+    },
+    aniDelay: {
+        type: Number,
+        default: 0.5
     }
 })
 </script>

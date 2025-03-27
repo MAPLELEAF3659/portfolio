@@ -111,28 +111,9 @@ import { projectItemsFeatured } from "~/types/constants";
 import BtnLink from "~/components/btnLink.vue";
 
 const currentYear = new Date().getFullYear();
-useHead({
-    title: "主頁"
-})
 </script>
 
 <style lang="postcss">
-.ani-float-up{
-    opacity: 0;
-    animation: 1s floatUp 0.5s ease-in-out forwards;
-}
-
-@keyframes floatUp{
-    0% {
-        opacity: 0;
-        transform: translateY(25%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-
 .arrow-down {
     animation: MoveDown 2s ease-in-out infinite;
 }

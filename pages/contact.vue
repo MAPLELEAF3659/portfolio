@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import SectSubHeader from '~/components/sectSubHeader.vue';
-import BoxContactLink from '~/components/boxContactLink.vue';
+import BoxContactLink from '~/components/contact/boxContactLink.vue';
 
 useHead({
     title: "聯絡"
