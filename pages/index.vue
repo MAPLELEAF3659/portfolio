@@ -20,9 +20,13 @@
         <div class="container mx-auto  my-16 md:my-32">
             <div class="grid grid-cols-2 gap-16 mx-8 md:mx-16 lg:mx-32 xl:mx-64">
                 <section class="about section-box col-span-2">
-                    <CompTitle title="簡介" title-bg="ABOUT" />
-                    <CompDesc
-                        desc="具備嵌入式軟韌體、人工智慧及多媒體網路通訊等開發與研究能力，並兼具設計師的創新思維。從專案合作、實習經驗與國際研討會發表中，探索跨領域實際應用。" />
+                    <div class="flex justify-between items-end">
+                        <nuxt-link to="/about">
+                            <CompTitle title="簡介" title-bg="ABOUT" />
+                        </nuxt-link>
+                        <BtnLink url="/about" text="關於我"/>
+                    </div>
+                    <CompDesc desc="具備嵌入式軟韌體、人工智慧及多媒體網路通訊等開發與研究能力，並兼具設計師的創新思維。從專案合作、實習經驗與國際研討會發表中，探索跨領域實際應用。" />
                     <CompDesc
                         desc="Stepping beyond the boundaries from information technology to design domain has equipped me with both the practical skills of a developer and the innovative mindset of a designer. Through various project implementations and oral presentations at international conferences, I have accumulated extensive interdisciplinary experience in software/firmware development, AI, and multimedia networking." />
                 </section>
@@ -44,7 +48,16 @@
                             '開發公司形象官網前端，包含主頁介紹與動畫、登入與註冊頁面、聯絡我們頁面等。',
                             '開發公司IG 活動小網站，包含活動說明與答題頁面之動畫實作。']" />
                 </section>
-                <section class="publication section-box col-span-2">
+                <section class="col-span-2">
+                    <div class="flex justify-between items-end">
+                        <nuxt-link to="/projects">
+                            <CompTitle title="專案" title-bg="PROJECTS" />
+                        </nuxt-link>
+                        <BtnLink url="/projects" text="查看所有專案→"/>
+                    </div>
+                    <SectionShowcaseSlider :items="projectItemsFeatured" />
+                </section>
+                <section class="publication section-box col-span-2 md:col-span-1">
                     <CompTitle title="發表" title-bg="PUBLICATION" />
                     <CompExperience date-start="2024"
                         title="Enhancing exercise engagement through AI-driven virtual training and game-based animation"
@@ -71,16 +84,17 @@
                     <CompExperience date-start="2023.04" date-end="2023.05" title="技職盃黑克松2023 ● 全國賽入圍/北區賽佳作"
                         subtitle="作品《滴滴蘭》(全國賽)、《山頂的Pachinko》(北區賽)" />
                 </section>
-                <section class="activities section-box col-span-2 md:col-span-1">
+                <section class="activities section-box col-span-2">
                     <CompTitle title="活動經歷" title-bg="ACTIVITIES" />
                     <CompExperience date-start="2024.02.29" title="秀山國小教師研習營 - AI生成創作" subtitle="講師" />
                     <CompExperience date-start="2023.12.20" title="國立暨南大學 - AI人像生成" subtitle="講師" />
                     <CompExperience date-start="2023.08" date-end="2023.09" title="XR 創新與實作課程 - NVIDIA x HTC x 北科大"
                         subtitle="助教" />
-                    <CompExperience date-start="2023.02" date-end="2023.06" title="111-2 學期北科互動系上課程(互動程式設計III、設計實作、基本設計II)"
-                        subtitle="助教" />
+                    <CompExperience date-start="2023.02" date-end="2023.06"
+                        title="111-2 學期北科互動系上課程(互動程式設計III、設計實作、基本設計II)" subtitle="助教" />
                     <CompExperience date-start="2023.04.14" title="教育部 人文社科教育苗圃分區資源中心計畫工作坊" subtitle="參與人" />
-                    <CompExperience date-start="2022.10.20" title="NVIDIA Studio x HP 協作空間 Openday" subtitle="作品製作與展演" />
+                    <CompExperience date-start="2022.10.20" title="NVIDIA Studio x HP 協作空間 Openday"
+                        subtitle="作品製作與展演" />
                     <CompExperience date-start="2022.07.11" date-end="2022.07.12" title="2022 創新IOT應用與雛型設計跨域工作坊"
                         subtitle="助教" />
                 </section>
@@ -92,8 +106,11 @@
 import CompTitle from "~/components/compTitle.vue"
 import CompDesc from "~/components/compDesc.vue"
 import CompExperience from "~/components/compExperience.vue"
-const currentYear = new Date().getFullYear();
+import SectionShowcaseSlider from "~/components/index/sectShowcaseSlider.vue";
+import { projectItemsFeatured } from "~/types/constants";
+import BtnLink from "~/components/btnLink.vue";
 
+const currentYear = new Date().getFullYear();
 useHead({
     title: "主頁"
 })

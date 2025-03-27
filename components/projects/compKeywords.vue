@@ -10,9 +10,9 @@
 
 <script setup lang="ts">
 defineProps({
+    // eslint-disable-next-line vue/require-default-prop
     keywords: {
         type: Array,
-        default: new Array
     },
     centered: {
         type: Boolean,
