@@ -1,7 +1,8 @@
 <!-- eslint-disable vue/first-attribute-linebreak -->
 <template>
     <a :href="url"
-        class="box-contact-link flex flex-col bg-color-link-box hover:bg-color-link-box-hover rounded-2xl p-8 sm:w-56 md:w-64">
+        class="box-contact-link flex flex-col bg-color-link-box hover:bg-color-link-box-hover rounded-2xl p-8 sm:w-56 md:w-64"
+        :style="{ 'animation-delay': aniDelay + 's' }">
         <img class="icon h-16 md:h-32 w-auto mx-auto mb-6" :src="baseUrl + iconUrl.replace('/images', 'images')"
             alt="icon">
         <p class="text-title text-black text-center mb-2">{{ title }}</p>
@@ -32,13 +33,17 @@ defineProps({
     iconUrl: {
         type: String,
         default: ""
+    },
+    aniDelay: {
+        type: Number,
+        default: 1
     }
 })
 </script>
 <style lang="postcss">
 .box-contact-link {
     opacity: 0;
-    animation: 1s floatUp 1s ease-in forwards;
+    animation: 1s floatUp ease-in-out forwards;
 }
 
 @keyframes floatUp {
