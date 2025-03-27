@@ -10,10 +10,10 @@
                 <CompKeywords :keywords="['Unreal Engine 5', 'MetaXR (for Oculus Quest 2)', 'Firebase', 'Nuxt.js']"
                     centered class="col-span-6 mx-auto" />
                 <BoxLink caption="特製戰地新聞網站" url="https://nnd-news.web.app/" class="col-span-6" />
-                <CompImgWithCaption img-url="/images/projects/the_blinking_bullet/prize_vgw.jpg" caption="放視大賞得獎畫面(左側為本團隊)"
-                    class="col-span-6 md:col-span-3" />
-                <CompImgWithCaption img-url="/images/projects/the_blinking_bullet/prize_golden_young_pin.jpg" caption="金點新秀得獎畫面(右側為本團隊)"
-                    class="col-span-6 md:col-span-3" />
+                <CompImgWithCaption img-url="/images/projects/the_blinking_bullet/prize_vgw.jpg"
+                    caption="放視大賞得獎畫面(左側為本團隊)" class="col-span-6 md:col-span-3" />
+                <CompImgWithCaption img-url="/images/projects/the_blinking_bullet/prize_golden_young_pin.jpg"
+                    caption="金點新秀得獎畫面(右側為本團隊)" class="col-span-6 md:col-span-3" />
                 <CompTitleWithDesc title="簡介" title-bg="INTRODUCTION"
                     desc="本專案旨在使用虛擬實境(VR)技術，為體驗者提供一個深刻、沉浸式的體驗，讓體驗者更加了解戰爭攝影師的工作和面臨的危險情況，並提升對他們的尊重和理解。同時，我們預期本作品能引發對國際戰爭衝突的更深入討論，以促進和平和解決衝突的努力。"
                     class="col-span-6 md:col-span-3" />
@@ -25,12 +25,11 @@
                     desc="VR裝置Quest2手把所具有的檢測加速度與方向的功能，讓我們能夠以偵測手勢與手部高度的方式用現有的設備創造出模擬攝影的體感操作模式，並將其運用於Unreal Engine 5中，整合其具備的真實畫面及特效，使體驗更上層樓。"
                     class="col-span-6 md:col-span-3" />
                 <div class="col-span-6 md:col-span-3 flex flex-col gap-4">
-                    <CompTitleWithDesc title="新聞網站操作說明" title-bg="NEWS" desc="以Nuxt.js網站框架(Vue 3)建立特製新聞網站，並將其串接至Firebase伺服器，利用其Firestore、Storage、Auth及Hosting功能，擴大遊戲體驗至現實當中，讓玩家能夠真正地將照片曝光在大眾視野。" />
-                    <CompImgWithCaption img-url="/images/projects/the_blinking_bullet/nnd_news_upload.png"
-                        caption="新聞網站上傳照片" />
+                    <CompTitleWithDesc title="新聞網站操作說明" title-bg="NEWS" desc="1. 玩家可在結束VR體驗後，將剛才拍攝的照片實際上傳到以Nuxt 3(Vue.js)開發的特製新聞網站中(右上)。系統將自動以照片中的內容，自動產生標題、文字描述等資訊，並且提供專屬頁面(下方)分享連結。
+                            2. 利用Firebase的Firestore, Storage, Auth, Hosting功能，將體驗擴大遊戲體驗至現實當中，讓玩家能夠真正地將照片曝光在大眾視野。" />
                 </div>
-                <CompImgWithCaption img-url="/images/projects/the_blinking_bullet/nnd_news_index.png" caption="新聞網站主頁"
-                    class="col-span-6 md:col-span-3" />
+                <CompImgWithCaption img-url="/images/projects/the_blinking_bullet/nnd_news_upload_generated_page.png"
+                    caption="上傳照片後，自動生成的玩家專屬新聞頁面" class="col-span-6 md:col-span-3" />
             </div>
         </div>
     </div>
