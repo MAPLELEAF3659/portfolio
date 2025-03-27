@@ -44,6 +44,7 @@
                             '開發公司IG 活動小網站，包含活動說明與答題頁面之動畫實作。']" />
                 </section>
                 <section class="col-span-2">
+                    <CompTitle title="專案" title-bg="PROJECTS" />
                     <SectionShowcaseSlider :items="projectItemsFeatured" />
                 </section>
                 <section class="publication section-box col-span-2 md:col-span-1">
