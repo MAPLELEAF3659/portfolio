@@ -1,12 +1,13 @@
 <template>
     <section class="section-showcase-slider">
         <!-- eslint-disable-next-line vue/first-attribute-linebreak -->
-        <Flicking :options="{ align: 'center', circular: true, renderOnlyVisible: true }" :plugins="flickingPlugins">
+        <Flicking :options="{ align: 'center', circular: true, renderOnlyVisible: true, adaptive: true }"
+            :plugins="flickingPlugins">
             <div v-for="(item, index) in items" :key="index">
                 <div class="panel mx-4 my-8">
                     <!-- eslint-disable-next-line vue/first-attribute-linebreak -->
-                    <BoxProject :title="item.title" :desc="item.desc" :tags="item.tags" :special="item.special" :img-url="item.imgUrl"
-                        :url="item.url" />
+                    <BoxProject :title="item.title" :desc="item.desc" :tags="item.tags" :special="item.special"
+                        :img-url="item.imgUrl" :url="item.url" />
                 </div>
             </div>
             <template #viewport>

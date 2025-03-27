@@ -1,9 +1,9 @@
 <template>
     <div class="title flex items-center gap-2 mt-8">
         <div class="circle w-3 h-3 md:w-6 md:h-6 rounded-full bg-red-300" />
-        <div class="text relative w-full">
-            <h3 class="absolute text-title text-t">{{ title }}</h3>
-            <h3 class="absolute text-title text-bg">{{ titleBg }}</h3>
+        <div class="text relative">
+            <h3 class="absolute text-title text-t whitespace-nowrap">{{ title }}</h3>
+            <h3 class="absolute text-title text-bg  whitespace-nowrap">{{ titleBg }}</h3>
         </div>
     </div>
 </template>
