@@ -23,6 +23,10 @@
     @apply text-base md:text-lg text-white;
   }
 
+  .text-link {
+    @apply text-base md:text-lg text-white hover:underline;
+  }
+
   .text-caption {
     color: #170d96;
     @apply text-base md:text-lg text-center;
@@ -58,5 +62,12 @@
     background: #ffc380;
     color: #677a98;
     text-decoration: underline;
+  }
+  .btn-link-header-color {
+    @apply bg-slate-500;
+  }
+  .btn-link-header-color-hover {
+    text-decoration: underline;
+    @apply bg-slate-500;
   }
 }

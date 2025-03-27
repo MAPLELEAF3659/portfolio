@@ -1,7 +1,7 @@
 <template>
   <div class="app bg-color-page">
     <Header />
-    <NuxtPage class="pt-14 pb-12 bg-color-page" />
+    <NuxtPage class="pt-14 pb-12 bg-color-page min-h-svh" />
     <Footer />
   </div>
 </template>
