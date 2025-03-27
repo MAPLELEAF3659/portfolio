@@ -20,7 +20,12 @@
         <div class="container mx-auto  my-16 md:my-32">
             <div class="grid grid-cols-2 gap-16 mx-8 md:mx-16 lg:mx-32 xl:mx-64">
                 <section class="about section-box col-span-2">
-                    <CompTitle title="簡介" title-bg="ABOUT" />
+                    <div class="flex justify-between items-end">
+                        <nuxt-link to="/about">
+                            <CompTitle title="簡介" title-bg="ABOUT" />
+                        </nuxt-link>
+                        <BtnLink url="/about" text="關於我"/>
+                    </div>
                     <CompDesc desc="具備嵌入式軟韌體、人工智慧及多媒體網路通訊等開發與研究能力，並兼具設計師的創新思維。從專案合作、實習經驗與國際研討會發表中，探索跨領域實際應用。" />
                     <CompDesc
                         desc="Stepping beyond the boundaries from information technology to design domain has equipped me with both the practical skills of a developer and the innovative mindset of a designer. Through various project implementations and oral presentations at international conferences, I have accumulated extensive interdisciplinary experience in software/firmware development, AI, and multimedia networking." />
@@ -44,7 +49,7 @@
                             '開發公司IG 活動小網站，包含活動說明與答題頁面之動畫實作。']" />
                 </section>
                 <section class="col-span-2">
-                    <div class="flex justify-between">
+                    <div class="flex justify-between items-end">
                         <nuxt-link to="/projects">
                             <CompTitle title="專案" title-bg="PROJECTS" />
                         </nuxt-link>
