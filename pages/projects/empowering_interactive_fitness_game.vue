@@ -1,11 +1,9 @@
 <!-- eslint-disable vue/first-attribute-linebreak -->
 <template>
     <div class="project-detail">
-        <SectSubHeader title="Empowering Interactive Fitness Game" title-alt="賦能式互動健身遊戲" />
+        <SectSubHeader title="Empowering Interactive Fitness Game" title-alt="2023 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)" />
         <div class="container mx-auto py-8 sm:py-12">
             <div class="grid grid-cols-2 gap-4 items-center mx-4 lg:mx-32 xl:mx-64">
-                <CompDesc desc="2023 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)"
-                    class="col-span-2 mx-auto text-center" />
                 <CompKeywords :keywords="['Artificial Intelligence', 'Fitness Game', 'Player Participation', 'Exergame']" centered
                     class="col-span-2 mx-auto" />
                 <BoxLink caption="IEEE Xplore Proceeding" url="https://ieeexplore.ieee.org/document/10227046" class="col-span-2"/>
@@ -25,7 +23,6 @@
 
 <script setup lang="ts">
 import SectSubHeader from '~/components/sectSubHeader.vue'
-import CompDesc from '~/components/compDesc.vue';
 import CompKeywords from '~/components/projects/compKeywords.vue';
 import CompTitleWithDesc from '~/components/compTitleWithDesc.vue';
 import CompImgWithCaption from '~/components/compImgWithCaption.vue';
