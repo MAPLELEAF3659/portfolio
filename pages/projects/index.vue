@@ -7,13 +7,12 @@
                 <CompTitle class="col-span-1 md:col-span-2 xl:col-span-3 mt-12 mb-6" title="精選" title-bg="FEATURED" />
                 <div v-for="(item, index) in projectItemsFeatured" :key="index" class="project-boxes">
                     <BoxProject class="col-span-1" :title="item.title" :desc="item.desc" :special="item.special"
-                        :tags="item.tags" :img-url="item.imgUrl" :url="item.url" :ani-delay="index * 0.25 + 0.5" />
+                        :tags="item.tags" :img-url="item.imgUrl" :url="item.url" :ani-delay="index * 0.1" />
                 </div>
                 <CompTitle class="col-span-1 md:col-span-2 xl:col-span-3 mt-12 mb-6" title="其他" title-bg="OTHER" />
                 <div v-for="(item, index) in projectItemsOther" :key="index" class="project-boxes">
                     <BoxProject class="col-span-1" :title="item.title" :desc="item.desc" :special="item.special"
-                        :tags="item.tags" :img-url="item.imgUrl" :url="item.url"
-                        :ani-delay="index * 0.25 + projectItemsFeatured.length * 0.25" />
+                        :tags="item.tags" :img-url="item.imgUrl" :url="item.url" />
                 </div>
             </div>
         </section>
