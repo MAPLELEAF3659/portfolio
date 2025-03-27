@@ -23,8 +23,12 @@
     @apply text-base md:text-lg text-white;
   }
 
+  .text-link {
+    @apply text-base md:text-lg text-white hover:underline;
+  }
+
   .text-caption {
-    color: #170D96;
+    color: #170d96;
     @apply text-base md:text-lg text-center;
   }
 
@@ -44,10 +48,26 @@
   .bg-color-page {
     @apply bg-gradient-to-b from-sky-700 from-80% to-sky-600 to-90%;
   }
-  .bg-color-img-caption{
-    background: #FFEB80;
+  .bg-color-img-caption {
+    background: #ffeb80;
   }
-  .bg-color-link-box{
-    background: #FFD6A6;
+  .bg-color-link-box {
+    background: #ffd6a6;
+  }
+  .btn-link-color {
+    background: #ffd6a6;
+    color: #374151;
+  }
+  .btn-link-color-hover {
+    background: #ffc380;
+    color: #677a98;
+    text-decoration: underline;
+  }
+  .btn-link-header-color {
+    @apply bg-slate-500;
+  }
+  .btn-link-header-color-hover {
+    text-decoration: underline;
+    @apply bg-slate-500;
   }
 }

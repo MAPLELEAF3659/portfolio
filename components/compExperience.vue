@@ -36,9 +36,9 @@ defineProps({
         type: String,
         default: ""
     },
+    // eslint-disable-next-line vue/require-default-prop
     descArray: {
-        type: Array,
-        default: new Array
+        type: Array
     }
 })
 </script>
