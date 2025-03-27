@@ -2,18 +2,18 @@
 <template>
     <div class="page-index w-full h-full">
         <section class="main h-svh py-48 bg-[url(/public/images/index_bg.png)]">
-            <div class="top gap-2 mb-32">
+            <div class="top gap-2 mb-32 ani-float-up">
                 <h2 class="text-main-sub text-with-space-sm">JUN-YE ZHOU</h2>
                 <h1 class="text-main text-with-space">周駿曄</h1>
                 <h2 class="text-main-sub text-with-space-sm mt-4">2020 - {{ currentYear }}</h2>
             </div>
-            <div class="bottom flex flex-col items-center gap-2 mb-16">
+            <div class="bottom flex flex-col items-center gap-2 mb-16 ani-float-up" style="animation-delay: 1s;">
                 <h2 class="text-main-sub text-with-space font-semibold italic">PORTFOLIO</h2>
                 <div class="divider border-2 border-white w-20" />
-                <p class="text-desc text-white text-center">An Interdisciplinary Information Engineer with Creative
-                    Design Thinking in AI.</p>
+                <p class="text-desc text-center -mb-2">An Interdisciplinary Information Technology Engineer with</p>
+                <p class="text-desc text-center">Creative Design Thinking in Firmware/AI/Networking</p>
             </div>
-            <div class="arrow flex flex-col items-center ">
+            <div class="arrow flex flex-col items-center ani-float-up">
                 <span class="arrow-down text-main-sub">↓</span>
             </div>
         </section>
@@ -111,9 +111,6 @@ import { projectItemsFeatured } from "~/types/constants";
 import BtnLink from "~/components/btnLink.vue";
 
 const currentYear = new Date().getFullYear();
-useHead({
-    title: "主頁"
-})
 </script>
 
 <style lang="postcss">

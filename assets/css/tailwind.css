@@ -53,6 +53,10 @@
   }
   .bg-color-link-box {
     background: #ffd6a6;
+    @apply shadow-lg shadow-slate-800;
+  }
+  .bg-color-link-box-hover {
+    background: #ffc380;
   }
   .btn-link-color {
     background: #ffd6a6;
@@ -69,5 +73,51 @@
   .btn-link-header-color-hover {
     text-decoration: underline;
     @apply bg-slate-500;
+  }
+
+  .ani-float-up {
+    opacity: 0;
+    animation: 1s floatUp 0.5s ease-in-out forwards;
+  }
+
+  @keyframes floatUp {
+    0% {
+      opacity: 0;
+      transform: translateY(25%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .ani-appear {
+    opacity: 0;
+    animation: 1s appear 0.5s ease-in-out forwards;
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .ani-float-right {
+    opacity: 0;
+    animation: 1s floatRight 0.5s ease-in-out forwards;
+  }
+
+  @keyframes floatRight {
+    0% {
+      opacity: 0;
+      transform: translateX(25%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
   }
 }

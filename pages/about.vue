@@ -43,4 +43,7 @@ import SectSubHeader from '~/components/sectSubHeader.vue';
 import CompTitle from '~/components/compTitle.vue';
 import CompDesc from '~/components/compDesc.vue';
 import CompImgWithCaption from '~/components/compImgWithCaption.vue';
+useHead({
+    title: "關於"
+})
 </script>
