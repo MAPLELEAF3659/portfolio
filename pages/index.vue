@@ -17,6 +17,7 @@
                 <div class="desc flex sm:hidden">
                     <p class="text-desc text-center">An Interdisciplinary Information Technology Engineer with Creative Design Thinking in Firmware/AI/Networking</p>
                 </div>
+                <BtnLink url="/contact" text="聯絡"/>
             </div>
             <div class="arrow flex flex-col items-center ani-float-up">
                 <span class="arrow-down text-main-sub">↓</span>
