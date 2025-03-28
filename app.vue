@@ -1,4 +1,5 @@
 <template>
+  <img :src="baseUrl + 'images/thumbnail.png'" alt="thumbnail" class="img-thumbnail hidden">
   <div class="app bg-color-page">
     <Header />
     <NuxtPage class="pt-14 pb-12 bg-color-page min-h-svh" />
@@ -9,6 +10,9 @@
 <script setup lang="ts">
 import Header from "./components/barHeader.vue"
 import Footer from './components/barFooter.vue';
+
+const config = useRuntimeConfig();
+const baseUrl = config.app.baseURL;
 
 useHead({
   titleTemplate: (pageTitle) => {
