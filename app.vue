@@ -1,5 +1,4 @@
 <template>
-  <img :src="baseUrl + 'images/thumbnail.png'" alt="thumbnail" class="img-thumbnail hidden">
   <div class="app bg-color-page">
     <Header />
     <NuxtPage class="pt-14 pb-12 bg-color-page min-h-svh" />
@@ -13,6 +12,10 @@ import Footer from './components/barFooter.vue';
 
 const config = useRuntimeConfig();
 const baseUrl = config.app.baseURL;
+
+useSeoMeta({
+  ogImage: baseUrl + "images/thumbnail.png"
+})
 
 useHead({
   titleTemplate: (pageTitle) => {
