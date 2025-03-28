@@ -1,17 +1,23 @@
 <!-- eslint-disable vue/first-attribute-linebreak -->
 <template>
     <div class="page-index w-full h-full">
-        <section class="main h-svh py-48 bg-[url(/public/images/index_bg.png)]">
-            <div class="top gap-2 mb-32 ani-float-up">
+        <section class="main py-48 bg-[url(/public/images/index_bg.png)]">
+            <div class="top gap-2 mb-32 mx-4 ani-float-up">
                 <h2 class="text-main-sub text-with-space-sm">JUN-YE ZHOU</h2>
                 <h1 class="text-main text-with-space">周駿曄</h1>
                 <h2 class="text-main-sub text-with-space-sm mt-4">2020 - {{ currentYear }}</h2>
             </div>
-            <div class="bottom flex flex-col items-center gap-2 mb-16 ani-float-up" style="animation-delay: 1s;">
+            <div class="bottom flex flex-col items-center gap-2 mb-16 mx-4 ani-float-up" style="animation-delay: 1s;">
                 <h2 class="text-main-sub text-with-space font-semibold italic">PORTFOLIO</h2>
                 <div class="divider border-2 border-white w-20" />
-                <p class="text-desc text-center -mb-2">An Interdisciplinary Information Technology Engineer with</p>
-                <p class="text-desc text-center">Creative Design Thinking in Firmware/AI/Networking</p>
+                <div class="desc hidden sm:flex flex-col">
+                    <p class="text-desc text-center">An Interdisciplinary Information Technology Engineer with</p>
+                    <p class="text-desc text-center">Creative Design Thinking in Firmware/AI/Networking</p>
+                </div>
+                <div class="desc flex sm:hidden">
+                    <p class="text-desc text-center">An Interdisciplinary Information Technology Engineer with Creative Design Thinking in Firmware/AI/Networking</p>
+                </div>
+                <BtnLink url="/contact" text="聯絡"/>
             </div>
             <div class="arrow flex flex-col items-center ani-float-up">
                 <span class="arrow-down text-main-sub">↓</span>
@@ -24,7 +30,7 @@
                         <nuxt-link to="/about">
                             <CompTitle title="簡介" title-bg="ABOUT" />
                         </nuxt-link>
-                        <BtnLink url="/about" text="關於我"/>
+                        <BtnLink url="/about" text="關於我" class="translate-y-2 sm:translate-y-0" />
                     </div>
                     <CompDesc desc="具備嵌入式軟韌體、人工智慧及多媒體網路通訊等開發與研究能力，並兼具設計師的創新思維。從專案合作、實習經驗與國際研討會發表中，探索跨領域實際應用。" />
                     <CompDesc
@@ -51,9 +57,9 @@
                 <section class="col-span-2">
                     <div class="flex justify-between items-end">
                         <nuxt-link to="/projects">
-                            <CompTitle title="專案" title-bg="PROJECTS" />
+                            <CompTitle title="專案" title-bg="PROJECTS" class="z-0" />
                         </nuxt-link>
-                        <BtnLink url="/projects" text="查看所有專案→"/>
+                        <BtnLink url="/projects" text="所有專案" class="translate-y-2 sm:translate-y-0 z-10" />
                     </div>
                     <SectionShowcaseSlider :items="projectItemsFeatured" />
                 </section>
