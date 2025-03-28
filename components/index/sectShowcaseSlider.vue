@@ -1,7 +1,7 @@
 <template>
     <section class="section-showcase-slider">
         <!-- eslint-disable-next-line vue/first-attribute-linebreak -->
-        <Flicking :options="{ align: 'center', circular: true, renderOnlyVisible: true, adaptive: true }"
+        <Flicking :options="{ align: 'center', circular: true, adaptive: true }"
             :plugins="flickingPlugins">
             <div v-for="(item, index) in items" :key="index">
                 <div class="panel mx-4 my-8">
@@ -12,8 +12,8 @@
             </div>
             <template #viewport>
                 <div class="flicking-pagination" />
-                <span class="flicking-arrow-prev" />
-                <span class="flicking-arrow-next" />
+                <span class="flicking-arrow-prev hidden sm:block" />
+                <span class="flicking-arrow-next hidden sm:block" />
             </template>
         </Flicking>
     </section>
