@@ -1,5 +1,5 @@
 <template>
-    <header class="header fixed h-16 w-full bg-color-header-footer z-10 p-2">
+    <header class="header fixed h-16 w-full bg-color-header-footer z-50 p-2">
         <div class="container h-full mx-auto flex justify-between md:grid grid-cols-2 lg:grid-cols-3">
             <div class="col-span-1 flex h-full items-center ml-2 xl:ml-0">
                 <nuxt-link class="logo" to="/">

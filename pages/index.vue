@@ -24,7 +24,7 @@
                         <nuxt-link to="/about">
                             <CompTitle title="簡介" title-bg="ABOUT" />
                         </nuxt-link>
-                        <BtnLink url="/about" text="關於我"/>
+                        <BtnLink url="/about" text="關於我" class="translate-y-2 sm:translate-y-0"/>
                     </div>
                     <CompDesc desc="具備嵌入式軟韌體、人工智慧及多媒體網路通訊等開發與研究能力，並兼具設計師的創新思維。從專案合作、實習經驗與國際研討會發表中，探索跨領域實際應用。" />
                     <CompDesc
@@ -51,9 +51,9 @@
                 <section class="col-span-2">
                     <div class="flex justify-between items-end">
                         <nuxt-link to="/projects">
-                            <CompTitle title="專案" title-bg="PROJECTS" />
+                            <CompTitle title="專案" title-bg="PROJECTS" class="z-0"/>
                         </nuxt-link>
-                        <BtnLink url="/projects" text="查看所有專案→"/>
+                        <BtnLink url="/projects" text="所有專案" class="translate-y-2 sm:translate-y-0 z-10"/>
                     </div>
                     <SectionShowcaseSlider :items="projectItemsFeatured" />
                 </section>
